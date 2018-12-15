@@ -1,0 +1,57 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet"> 
+<title>Improve Your Basic Maths!!</title>
+<style>
+ol{font-family: 'Bangers', cursive;color:#661400;font-size:200%;letter-spacing:0px;word-spacing:20px;}
+
+p{margin:0px;padding:20px;}
+
+body{margin:0px;padding:0px;}
+
+hr{border:5px black solid;}
+button{font-family: 'Bangers', cursive;}
+
+
+</style>
+</head>
+<body style="background-color:#008080;">
+
+<h1 style="text-align:center;font-family: 'Bangers', cursive;font-size:300%;word-spacing:20px;">Welcome to Maths Challenge!!</h1>
+<hr style="border:10px dashed black;margin-bottom:100px;">
+<ol style="padding-left:10px;">
+<div>
+<li><p><b>1. What is 1+1?</b></p></li>
+<p><input type="text" id="a2"></p><p><button type="button" id="a1">Check</button></p><hr><br><br><br>
+</div>
+
+<li><p><b>2. What is 3-1?</b></p></li>
+<p><input type="text" id="b2"></p><p><button type="button" id="b1">Check</button></p>
+<hr><br><br><br>
+
+<li><p><b>3. What is 2x1?</b></p></li>
+<p><input type="text" id="c2"></p><p><button type="button" id="c1">Check</button></p><hr><br><br><br>
+
+<li><p><b>4. What is 4/2?</b></p></li>
+<p><input type="text" id="d2"></p><p><button type="button" id="d1">Check</button></p><hr><br><br><br>
+</ol>
+
+
+<input type="submit" value="Click to know your score" style="margin-left:600px;" id="sub" style="font-family: 'Bangers', cursive;">
+
+
+<script>
+
+
+var a=new Array();var s=0;
+document.getElementById("a1").onclick=function(){a[0]=document.getElementById("a2").value;if(a[0]==2){alert("Correct Answer!!");s=s+1;}else {alert("Sorry..Correct Answer is 2");}}
+document.getElementById("b1").onclick=function(){a[1]=document.getElementById("b2").value;if(a[1]==2){alert("Correct Answer!!");s=s+1;}else {alert("Sorry..Correct Answer is 2");}}
+document.getElementById("c1").onclick=function(){a[2]=document.getElementById("c2").value;if(a[2]==2){alert("Correct Answer!!");s=s+1;}else {alert("Sorry..Correct Answer is 2");}}
+document.getElementById("d1").onclick=function(){a[3]=document.getElementById("d2").value;if(a[3]==2){alert("Correct Answer!!");s=s+1;}else {alert("Sorry..Correct Answer is 2");}}
+
+
+document.getElementById("sub").onclick=function(){alert("Your score is "+s);s=0;}
+</script>
+
+</body>
+</html>
